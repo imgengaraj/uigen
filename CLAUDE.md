@@ -68,7 +68,7 @@ UIGen is an AI-powered React component generator. Users describe a component in 
 
 Prisma + SQLite (`prisma/dev.db`). The `Project` model stores `messages` (JSON array) and `data` (serialized VFS nodes) as plain strings. Projects only save to DB when a user is authenticated; anonymous sessions track work in `anon-work-tracker.ts` (likely localStorage).
 
-The Prisma client is generated to `src/generated/prisma` (not the default location).
+The Prisma client is generated to `src/generated/prisma` (not the default location). The database schema is defined in `prisma/schema.prisma` — reference it whenever you need to understand the structure of data stored in the database.
 
 ### Routing
 
